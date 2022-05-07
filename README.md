@@ -5,7 +5,7 @@
 - [x] 开源书籍文本（以 `submodule` 形式）；
 - [x] 构建脚本；
 - [x] 生成的 EPUB 文件；
-- [ ] 构建 `actions`。
+- [x] 构建 `actions`。
 
 ## LICENSE
 
