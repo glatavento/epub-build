@@ -1,0 +1,30 @@
+name: Build EPUB
+
+on: push
+
+jobs:
+  build-epub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Set up Pandoc installation
+        uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: '2.18'
+
+      - name: Build EPUB
+        run: |
+          cd $GITHUB_WORKSPACE
+          cd HOPL4-zh
+          bash build.sh
+
+      - name: Upload EPUB
+        uses: actions/upload-artifact@v3
+        with:
+          path:
+            _out/*.epub
+          name: epub
