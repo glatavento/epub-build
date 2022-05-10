@@ -1,0 +1,7 @@
+---
+title: C++ 核心指导方针
+author:
+    - Bjarne Stroustrup
+    - Herb Sutter
+language: zh-CN
+...

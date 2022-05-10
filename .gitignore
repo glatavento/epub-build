@@ -6,6 +6,7 @@
 _out
 _draft
 _tmp
+_test*
 
 ### Linux ###
 *~

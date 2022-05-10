@@ -7,3 +7,6 @@
 [submodule "RustBook-zh/src"]
 	path = RustBook-zh/src
 	url = git@github.com:rust-lang-cn/book-cn.git
+[submodule "CppCoreGuidelines-zh/src"]
+	path = CppCoreGuidelines-zh/src
+	url = git@github.com:lynnboy/CppCoreGuidelines-zh-CN.git
