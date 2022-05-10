@@ -1,6 +1,12 @@
 name: Build EPUB
 
-on: push
+on:
+  push:
+    branches:
+      - dev
+    tags:
+      - Book*
+
 
 jobs:
   prepare:
@@ -33,6 +39,13 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v1
         with:
           pandoc-version: '2.18'
+
+      - name: Set up MDBook installation
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook-epub
+          version: latest
+          use-tool-cache: true
 
       - name: Build EPUB
         run: |

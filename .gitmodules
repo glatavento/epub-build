@@ -1,3 +1,9 @@
 [submodule "HOPL4-zh/src"]
 	path = HOPL4-zh/src
 	url = git@github.com:Cpp-Club/Cxx_HOPL4_zh.git
+[submodule "RustByExample-zh/src"]
+	path = RustByExample-zh/src
+	url = git@github.com:rust-lang-cn/rust-by-example-cn.git
+[submodule "RustBook-zh/src"]
+	path = RustBook-zh/src
+	url = git@github.com:rust-lang-cn/book-cn.git
