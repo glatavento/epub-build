@@ -39,8 +39,8 @@ jobs:
 
       - name: Set up MDBook EPUB installation
         run: |
-          cargo-binstall mdbook-epub --version=0.4.15-beta --no-confirm
           cargo-binstall mdbook --no-confirm
+          cargo install --git https://github.com/glatavento/mdbook-epub
 
       - name: Build EPUB
         run: |
