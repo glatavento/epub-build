@@ -5,4 +5,5 @@ cp ../book.toml .
 
 mdbook build
 mv book.toml.bak book.toml
-mv ./book/*.epub ../../_out/
+cd ..
+mv src/book/*.epub ../_out/$(basename $PWD).epub
