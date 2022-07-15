@@ -10,3 +10,6 @@
 [submodule "CppCoreGuidelines-zh/src"]
 	path = CppCoreGuidelines-zh/src
 	url = git@github.com:lynnboy/CppCoreGuidelines-zh-CN.git
+[submodule "Cpp17-zh/src"]
+	path = Cpp17-zh/src
+	url = git@github.com:MeouSker77/Cpp17.git
