@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+mkdir -p ../_out
+pandoc -o ../_out/$(basename $PWD).epub \
+    --epub-chapter-level=1 \
+    --file-scope \
+    --lua-filter=filter.lua \
+    --resource-path=src/0.Public \
+    --resource-path=src/src/4.SmartPointers \
+    --resource-path=src/src/5.RRefMovSemPerfForw \
+    --resource-path=src/src/7.TheConcurrencyAPI \
+    title.txt \
+    README.md \
+    src/src/Introduction.md \
+    src/src/1.DeducingTypes/item1.md \
+    src/src/1.DeducingTypes/item2.md \
+    src/src/1.DeducingTypes/item3.md \
+    src/src/1.DeducingTypes/item4.md \
+    src/src/2.Auto/item5.md \
+    src/src/2.Auto/item6.md \
+    src/src/3.MovingToModernCpp/item7.md \
+    src/src/3.MovingToModernCpp/item8.md \
+    src/src/3.MovingToModernCpp/item9.md \
+    src/src/3.MovingToModernCpp/item10.md \
+    src/src/3.MovingToModernCpp/item11.md \
+    src/src/3.MovingToModernCpp/item12.md \
+    src/src/3.MovingToModernCpp/item13.md \
+    src/src/3.MovingToModernCpp/item14.md \
+    src/src/3.MovingToModernCpp/item15.md \
+    src/src/3.MovingToModernCpp/item16.md \
+    src/src/3.MovingToModernCpp/item17.md \
+    src/src/4.SmartPointers/item18.md \
+    src/src/4.SmartPointers/item19.md \
+    src/src/4.SmartPointers/item20.md \
+    src/src/4.SmartPointers/item21.md \
+    src/src/4.SmartPointers/item22.md \
+    src/src/5.RRefMovSemPerfForw/item23.md \
+    src/src/5.RRefMovSemPerfForw/item24.md \
+    src/src/5.RRefMovSemPerfForw/item25.md \
+    src/src/5.RRefMovSemPerfForw/item26.md \
+    src/src/5.RRefMovSemPerfForw/item27.md \
+    src/src/5.RRefMovSemPerfForw/item28.md \
+    src/src/5.RRefMovSemPerfForw/item29.md \
+    src/src/5.RRefMovSemPerfForw/item30.md \
+    src/src/6.LambdaExpressions/item31.md \
+    src/src/6.LambdaExpressions/item32.md \
+    src/src/6.LambdaExpressions/item33.md \
+    src/src/6.LambdaExpressions/item34.md \
+    src/src/7.TheConcurrencyAPI/Item35.md \
+    src/src/7.TheConcurrencyAPI/item36.md \
+    src/src/7.TheConcurrencyAPI/item37.md \
+    src/src/7.TheConcurrencyAPI/item38.md \
+    src/src/7.TheConcurrencyAPI/item39.md \
+    src/src/7.TheConcurrencyAPI/item40.md \
+    src/src/8.Tweaks/item41.md \
+    src/src/8.Tweaks/item42.md

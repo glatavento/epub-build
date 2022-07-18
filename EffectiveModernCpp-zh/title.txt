@@ -1,0 +1,6 @@
+---
+title: Effective Modern C++
+author: Scott Meyers
+language: zh-CN
+cover-image: src/0.Public/1.png
+...
